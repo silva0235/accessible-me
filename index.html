@@ -14,8 +14,10 @@
 </head>
 
 <body>
+  <!-- allows screen reader to jump to main content -->
   <a href="#main" class="skip-link">Skip to main content</a>
 
+  <!-- defines schema.org info -->
   <div class="container" itemscope itemtype="https://schema.org/Organization">
 
     <header class="site-header">
@@ -28,6 +30,7 @@
           <li><a href="#">Studio</a></li>
         </ul>
       </nav>
+      <!-- decorative banner, empty alt so screen reader ignors -->
       <img src="https://picsum.photos/1200/900" class="banner" alt="">
     </header>
     <main id="main" class="main-content">
@@ -42,6 +45,7 @@
         voluptatibus.</p>
       <section class="owner">
         <h2>Meet the owner</h2>
+        <!-- list of owner information with schema.org properties -->
         <ul>
           <li><span itemprop="founder">John Doe</span></li>
           <li>Title: CEO</li>
@@ -49,6 +53,7 @@
           <li>Phone: <span itemprop="telephone">613-000-0000</span></li>
         </ul>
         <h3>Address</h3>
+        <!-- organization address with schema.org properties -->
         <p itemprop="address">
           Jambox Studios
           123 Guitar Road,
@@ -59,6 +64,7 @@
       <section class="contact-section">
         <h3>Contact Us</h3>
         <form action="thanks.html">
+          <!-- label connects text to input for accessibility -->
           <label for="fullname">Full Name</label>
           <input id="fullname" type="text" name="fullname">
 

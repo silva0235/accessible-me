@@ -35,6 +35,7 @@ img {
 .main-nav ul li {
   flex: 1;
   text-align: center;
+  /* adds space and boarder to easier readability */
   padding: 10px;
   border: 1px solid #c7c7d3;
   margin: 5px;
@@ -73,11 +74,13 @@ form button {
   padding: 2rem 0;
 }
 
+/* hides skip link visually but accessible to screen readers */
 .skip-link {
   position: absolute;
   left: -9999px;
 }
 
+/* shows skip link when focused with keyboard */
 .skip-link:focus {
   position: static;
   left: auto;
