@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: rgb(247, 244, 244);
   margin: 0;
   padding: 0;
 }
@@ -35,6 +35,9 @@ img {
 .main-nav ul li {
   flex: 1;
   text-align: center;
+  padding: 10px;
+  border: 1px solid #c7c7d3;
+  margin: 5px;
 }
 
 .main-nav ul li a {
@@ -68,4 +71,18 @@ form button {
 
 .site-footer {
   padding: 2rem 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip-link:focus {
+  position: static;
+  left: auto;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  z-index: 1000;
 }
